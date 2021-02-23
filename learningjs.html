@@ -10,16 +10,17 @@
 <body>
     <h1>Learning JavaScript</h1>
     <p>Estudo Js in MDN Web docs</p>
-    <p>Player 1: Chris</p>
+    <p id="btnjs">Player 1: Chris</p>
 
     <script>
-        const para = document.querySelector('JS')
+        const para = document.querySelector('#btnjs')
 
         para.addEventListener('click', updateName)
 
-        function updateName() {
+        function updateName(){
             let name = prompt('Enter a new name')
-            para.textContent = 'Player 1:' + name
+            para.textContent = 'Player 1: ' + name
+
         }
     </script>
 </body>
